@@ -2,118 +2,163 @@
 <html lang="en">
 
 <head>
-    <!-- Meta information -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSPolymers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Resources/logo.ico" type="image/x-icon">
 
-    <!-- Page title -->
-    <title>MSPolymers</title>
-
-    <!-- External stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Boxicons for contact icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
-    <!-- Header section -->
-    <header>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+        <a href="#" class="logo">
+            <img src="Resources/logo.jpeg" style="height: 52px;border-radius: 10px;" alt="logo">
+        </a>
         <h1>MSPolymers</h1>
-    </header>
-
-    <!-- Navigation bar -->
-    <nav>
-        <button onclick="showSection('home')">HOME</button>
-        <button onclick="showSection('about')">ABOUT US</button>
-        <button onclick="showSection('contact')">CONTACT US</button>
-    </nav>
-
-    <!-- Main content area -->
-    <main>
-
-        <!-- Products section -->
-        <section id="home" class="content">
-            <h2>Our Products</h2>
-
-            <!-- Product cards container -->
-            <div class="product-container">
-
-                <!-- Product 1 -->
-                <div class="product">
-                    <img src="product1.jpg" alt="Product 1">
-                    <div class="details">
-                        <h3>Product 1</h3>
-                        <p>High quality industrial product.</p>
-                        <p class="price">Price: ₹5000</p>
-                        <a href="PAGES/product1.html" target="_blank" rel="noopener noreferrer">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="product">
-                    <img src="product2.jpg" alt="Product 2">
-                    <div class="details">
-                        <h3>Product 2</h3>
-                        <p>Reliable and durable equipment.</p>
-                        <p class="price">Price: ₹7500</p>
-                        <a href="PAGES/product2.html" target="_blank" rel="noopener noreferrer">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="product">
-                    <img src="product3.jpg" alt="Product 3">
-                    <div class="details">
-                        <h3>Product 3</h3>
-                        <p>Advanced corporate solution.</p>
-                        <p class="price">Price: ₹12000</p>
-                        <a href="PAGES/product3.html" target="_blank" rel="noopener noreferrer">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="product">
-                    <img src="product4.jpg" alt="Product 4">
-                    <div class="details">
-                        <h3>Product 4</h3>
-                        <p>Premium grade business product.</p>
-                        <p class="price">Price: ₹15000</p>
-                        <a href="PAGES/product4.html" target="_blank" rel="noopener noreferrer">
-                            View Details
-                        </a>
-                    </div>
-                </div>
-
+        <div class="header-boxes">
+            <div class="header-box" onclick="scrollToContact()">
+                <i class='bx bxs-envelope'></i>
+                <span>MSPolymers8@gmail.com</span>
             </div>
-        </section>
+            <div class="header-box" onclick="scrollToContact()">
+                <i class='bx bxs-phone'></i>
+                <span>+91 9650522685</span>
+            </div>
+        </div>
+    </div>
+</header>
 
-        <!-- About us section -->
-        <section id="about" class="content" style="display:none;">
-            <h2>About Us</h2>
-            <p>We are a trusted B2B supplier with years of experience in the industry.</p>
-        </section>
 
-        <!-- Contact section -->
-        <section id="contact" class="content" style="display:none;">
-            <h2>Contact Us</h2>
-            <p>Email: MSPolymers8@gmail.com</p>
-            <p>Phone: +91 9650522685</p>
-        </section>
+  <!-- Sidebar Navigation -->
+  <nav>
+    <button onclick="scrollToSection('home')">HOME</button>
+    <button onclick="scrollToSection('about')">ABOUT US</button>
+    <button onclick="scrollToSection('contact')">CONTACT US</button>
+  </nav>
 
-    </main>
+  <!-- Main Content -->
+  <main>
+    <!-- Products Section -->
+    <section id="home" class="content">
+      <h2>Our Products</h2>
+      <div class="product-container">
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 MSPolymers.in, All rights reserved.</p>
-    </footer>
+        <div class="product">
+          <img src="product1.jpg" alt="Product 1">
+          <div class="details">
+            <h3>Product 1</h3>
+            <p>High quality industrial product.</p>
+            <p class="price">Price: ₹5000</p>
+            <a href="PAGES/product1.html" target="_blank" rel="noopener noreferrer">View Details</a>
+          </div>
+        </div>
 
-    <!-- External JavaScript -->
-    <script src="script.js"></script>
+        <div class="product">
+          <img src="product2.jpg" alt="Product 2">
+          <div class="details">
+            <h3>Product 2</h3>
+            <p>Reliable and durable equipment.</p>
+            <p class="price">Price: ₹7500</p>
+            <a href="PAGES/product2.html" target="_blank" rel="noopener noreferrer">View Details</a>
+          </div>
+        </div>
 
+        <div class="product">
+          <img src="product3.jpg" alt="Product 3">
+          <div class="details">
+            <h3>Product 3</h3>
+            <p>Advanced corporate solution.</p>
+            <p class="price">Price: ₹12000</p>
+            <a href="PAGES/product3.html" target="_blank" rel="noopener noreferrer">View Details</a>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="product4.jpg" alt="Product 4">
+          <div class="details">
+            <h3>Product 4</h3>
+            <p>Premium grade business product.</p>
+            <p class="price">Price: ₹15000</p>
+            <a href="PAGES/product4.html" target="_blank" rel="noopener noreferrer">View Details</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="content">
+      <h2>About Us</h2>
+      <p>We are a trusted B2B supplier with years of experience in the industry.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-box">
+          <h2>Let's Work Together</h2>
+          <div class="contact-detail">
+            <i class='bx bxs-phone'></i>
+            <div class="detail">
+              <p>Phone</p>
+              <p>+91 9650522685</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i class='bx bxs-envelope'></i>
+            <div class="detail">
+              <p>Email</p>
+              <p>MSPolymers8@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i class='bx bxs-map'></i>
+            <div class="detail">
+              <p>Address</p>
+              <p>Plot no 42 national steel compund <br>meerut road ,ghaziabad</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-box">
+          <form>
+            <h2 class="heading">Contact <span>Us!</span></h2>
+
+            <div class="field-box">
+              <input id="fullname" type="text" name="name" placeholder="Full Name" required>
+              <input id="email" type="email" name="email" placeholder="Email Address"
+                pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" required>
+              <input id="phone" type="text" name="phone" placeholder="Phone Number" pattern="\d{10}"
+                title="Enter a 10-digit phone number" required>
+              <input id="subject" type="text" name="subject" placeholder="Email Subject" required>
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 MSPolymers.in, All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
