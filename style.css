@@ -21,7 +21,12 @@ body {
 
 /* Header */
 
-
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
 header {
     background-color: #D9DFC6;
     color: #fff;
@@ -41,30 +46,36 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
+    /* justify-content: space-between; */
+    /* max-width: 1100px; */
     margin: 0 auto;
 }
 
 .header-container h1 {
     font-size: 2.2rem;
-    text-align:justify;
+    /* text-align:justify; */
 }
 
 .header-boxes {
     display: flex;
     gap: 1rem;
+    /* align-items:stretch ; */
+    /* justify-content:stretch; */
+    margin-left: inherit;
 }
 
 .header-box {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 0.5rem;
     background-color: #ffffff20; /* slight transparency */
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    align-items: flex-end;
+    justify-self:auto;
+    margin-left: auto;
 }
 
 .header-box:hover {
@@ -118,6 +129,7 @@ main {
     margin-left: 200px;
     margin-top: 80px;
     padding: 20px;
+    margin-top: auto;
 }
 
 /* Sections */
@@ -266,7 +278,7 @@ footer {
 /* Contact Section */
 .contact {
     width: 100%;
-    padding: 6rem 2rem;
+    padding: initial;
     background-color: #f2f2f2;
 }
 
@@ -311,7 +323,7 @@ footer {
 
 .contact-box form {
     background: #fff;
-    padding: 2.5rem 3rem;
+    padding: 1rem 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 2rem rgba(0,0,0,0.05);
     text-align: center;
@@ -383,5 +395,118 @@ footer {
 @media screen and (max-width: 768px) {
     .product-container {
         grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===== RESPONSIVE DESIGN FOR MSPOLYMERS ===== */
+
+/* Large tablets and small laptops */
+@media screen and (max-width: 1100px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        justify-self: center;
+    }
+
+    .header-boxes {
+        justify-content: center;
+        justify-self: center;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        top: 0;
+    }
+
+    nav button {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 900px) {
+    .product {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 768px) {
+
+    .header-container h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav button {
+        width: 90%;
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box .field-box {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 500px) {
+
+    .header-boxes {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-header h2 {
+        font-size: 24px;
+    }
+
+    .feature {
+        padding: 15px;
     }
 }

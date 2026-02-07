@@ -57,23 +57,27 @@ window.scrollToContact = function () {
 
 
 
-// Wait for DOM to be ready before accessing form elements
 document.addEventListener('DOMContentLoaded', function () {
-    // Make sure SweetAlert2 is included in your page
-    // <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    // Attach click listeners to nav buttons and header boxes (use data-target attributes)
-    var navBtns = document.querySelectorAll('nav button[data-target], .header-box[data-target]');
-    navBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            e.preventDefault();
-            var target = btn.getAttribute('data-target');
-            console.debug('Button clicked, target:', target);
+    // FIX NAV BUTTONS
+    const navButtons = document.querySelectorAll('nav button');
+    navButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const target = this.getAttribute('data-target');
             if (target) {
                 window.scrollToSection(target);
             }
         });
     });
+
+    // FIX HEADER CONTACT BUTTONS
+    const headerButtons = document.querySelectorAll('.header-box');
+    headerButtons.forEach(function (box) {
+        box.addEventListener('click', function () {
+            window.scrollToSection('contact');
+        });
+    });
+
 
     const contactForm = document.getElementById('contactForm');
     if (!contactForm) {
