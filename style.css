@@ -47,7 +47,7 @@
 .cta-btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #0b3d91;
+    background-color: #1A3D63;
     color: #ffffff;
     text-decoration: none;
     border-radius: 6px;
@@ -57,7 +57,7 @@
 }
 
 .cta-btn:hover {
-    background-color: #092c6b;
+    background-color: #5287ea;
 }
 
 /* Product Specification Table */
@@ -248,7 +248,7 @@ body {
 
 header {
     background-color: #D9DFC6;
-    color: #fff;
+    color: #002b17bd;
     position: sticky;
     top: 0;
     left: 0;
@@ -294,7 +294,7 @@ header {
     display: flex;
     /* align-items: center; */
     gap: 0.5rem;
-    background-color: #ffffff20;
+    background-color: #00ff8820;
     /* slight transparency */
     padding: 8px 12px;
     border-radius: 5px;
@@ -774,10 +774,10 @@ footer {
         height: auto;
     }
 
-    .product img {
-        /* width: 100%;
-        height: auto; */
-    }
+    /* .product img {
+        width: 100%;
+        height: auto;
+    } */
 
     .about-header h2 {
         font-size: 24px;
