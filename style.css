@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
-    scroll-behavior: smooth; /* Smooth scroll */
+    scroll-behavior: smooth;
+    /* Smooth scroll */
     overflow-x: hidden;
 }
 
@@ -27,6 +29,7 @@ body {
     gap: 10px;
     justify-content: flex-start;
 }
+
 header {
     background-color: #D9DFC6;
     color: #fff;
@@ -35,8 +38,10 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 10px 20px;
+    padding: 10px 50px;
+    padding-left: 5rem;
 }
+
 .logo {
     font-size: 4rem;
     font-weight: 700;
@@ -49,6 +54,7 @@ header {
     /* justify-content: space-between; */
     /* max-width: 1100px; */
     margin: 0 auto;
+    height: 4rem;
 }
 
 .header-container h1 {
@@ -68,13 +74,14 @@ header {
     display: flex;
     /* align-items: center; */
     gap: 0.5rem;
-    background-color: #ffffff20; /* slight transparency */
+    background-color: #ffffff20;
+    /* slight transparency */
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     align-items: flex-end;
-    justify-self:auto;
+    justify-self: auto;
     margin-left: auto;
 }
 
@@ -105,6 +112,10 @@ nav {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* nav.active{
+    animation: show-header 1.0s linear forwards;
+} */
+
 nav button {
     display: block;
     width: 80%;
@@ -128,7 +139,7 @@ main {
     flex: 1;
     margin-left: 200px;
     margin-top: 80px;
-    padding: 20px;
+    padding: 0.3rem;
     margin-top: auto;
 }
 
@@ -138,8 +149,10 @@ main {
     margin: 20px 10px;
     padding: 20px;
     border-radius: 5px;
-    min-height: 100vh;       /* each section takes full screen height */
-    scroll-margin-top: 90px; /* prevents header overlap */
+    min-height: 100vh;
+    /* each section takes full screen height */
+    scroll-margin-top: 90px;
+    /* prevents header overlap */
 
 }
 
@@ -237,7 +250,7 @@ footer {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Features Section */
@@ -325,7 +338,7 @@ footer {
     background: #fff;
     padding: 1rem 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 2rem rgba(0,0,0,0.05);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.05);
     text-align: center;
 }
 
@@ -360,7 +373,7 @@ footer {
 .contact-box .field-box textarea:focus {
     outline: none;
     border-color: #0b3d91;
-    box-shadow: 0 0 1rem rgba(11,61,145,0.3);
+    box-shadow: 0 0 1rem rgba(11, 61, 145, 0.3);
 }
 
 .contact-box .btn {
@@ -384,9 +397,11 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
     }
+
     .contact-box form {
         margin-top: 2rem;
     }
+
     .contact-box h2 {
         font-size: 2.5rem;
     }
@@ -408,6 +423,7 @@ footer {
         text-align: center;
         gap: 10px;
         justify-self: center;
+        height: auto;
     }
 
     .header-boxes {
@@ -438,6 +454,7 @@ footer {
 
 /* Tablets */
 @media screen and (max-width: 900px) {
+
     .product {
         flex-direction: column;
         align-items: center;
@@ -455,7 +472,7 @@ footer {
     }
 
     .about-text {
-        text-align: center;
+        text-align: justify;
     }
 }
 
@@ -466,14 +483,14 @@ footer {
         font-size: 1.8rem;
     }
 
-    nav {
+    /* nav {
         flex-direction: column;
         align-items: center;
     }
 
     nav button {
         width: 90%;
-    }
+    } */
 
     .product-container {
         display: grid;
@@ -487,6 +504,36 @@ footer {
     footer {
         font-size: 14px;
     }
+
+
+
+
+    #menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        text-align: center;
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 4rem 0;
+    }
+
 }
 
 /* Small mobile devices */
@@ -495,6 +542,10 @@ footer {
     .header-boxes {
         flex-direction: column;
         gap: 5px;
+    }
+
+    .header-container {
+        height: auto;
     }
 
     .product img {
