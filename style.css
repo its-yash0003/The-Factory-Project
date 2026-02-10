@@ -341,10 +341,15 @@ nav {
 /* nav.active{
     animation: show-header 1.0s linear forwards;
 } */
+nav {
+    text-align: center;
+}
 
-nav button {
+nav button,
+nav .nav-btn {
     display: block;
     width: 80%;
+    max-width: 200px; /* 🔒 controls button size */
     margin: 10px auto;
     padding: 10px;
     font-size: 16px;
@@ -354,9 +359,12 @@ nav button {
     border: none;
     border-radius: 5px;
     transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
 }
 
-nav button:hover {
+nav button:hover,
+nav .nav-btn:hover {
     background-color: #5287ea;
 }
 
@@ -697,6 +705,13 @@ footer {
         padding: 10px 20px;
     }
 }
+@media (min-width: 1100px) {
+    nav button,
+    nav .nav-btn {
+        max-width: 400px;
+    }
+}
+
 
 /* Tablets */
 @media screen and (max-width: 900px) {
@@ -806,4 +821,5 @@ footer {
     .feature {
         padding: 15px;
     }
+    
 }
