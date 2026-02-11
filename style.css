@@ -303,6 +303,7 @@ header {
     align-items: flex-end;
     justify-self: auto;
     margin-left: auto;
+    text-decoration: none;
 }
 
 .header-box:hover {

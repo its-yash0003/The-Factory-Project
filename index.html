@@ -26,14 +26,18 @@
         </a>
       </div>
       <div class="header-boxes">
-        <div class="header-box" onclick="window.scrollToSection('contact')">
+        <!-- <div class="header-box" onclick="window.scrollToSection('contact')">
           <i class='bx bxs-envelope'></i>
           <span>MSPolymers8@gmail.com</span>
-        </div>
-        <div class="header-box" onclick="window.scrollToSection('contact')">
+        </div> -->
+       <a class="header-box" href="#contact">
+          <i class='bx bxs-phone'></i>
+          <span>MSPolymers8@gmail.com</span>
+        </a>
+        <a class="header-box" href="#contact">
           <i class='bx bxs-phone'></i>
           <span>+91 9650522685</span>
-        </div>
+        </a>
       </div>
     </div>
   </header>
@@ -41,11 +45,15 @@
 
   <!-- Sidebar Navigation -->
   <nav>
-    <button onclick="scrollToSection('home')">HOME</button>
+    <a href="#home" class="nav-btn">
+      HOME
+    </a>
     <a href="PAGES/AboutUs.html" target="_blank" class="nav-btn">
       ABOUT US
     </a>
-    <button onclick="scrollToSection('contact')">CONTACT US</button>
+    <a href="#contact" class="nav-btn">
+      CONTACT US
+    </a>
   </nav>
 
 
@@ -103,6 +111,15 @@
           </div>
         </div>
 
+        <div class="product">
+          <img src="Resources/83mm_cap_red.jpeg" alt="83mm Cap with Handle">
+          <div class="details">
+            <h3>83mm Cap with Handle</h3>
+            <p>Durable and Reliable Plastic Cap for FMCG and Oil Packaging.</p>
+            <p class="price">Price: Negotiable</p>
+            <a href="PAGES/product5.html" target="_blank" rel="noopener noreferrer">View Details</a>
+          </div>
+        </div>
       </div>
     </section>
 
