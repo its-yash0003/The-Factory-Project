@@ -350,7 +350,8 @@ nav button,
 nav .nav-btn {
     display: block;
     width: 80%;
-    max-width: 200px; /* 🔒 controls button size */
+    max-width: 200px;
+    /* 🔒 controls button size */
     margin: 10px auto;
     padding: 10px;
     font-size: 16px;
@@ -511,6 +512,7 @@ footer {
         gap: 10px;
         padding: 0 5px;
     }
+
     .feature {
         padding: 12px;
         font-size: 15px;
@@ -706,7 +708,9 @@ footer {
         padding: 10px 20px;
     }
 }
+
 @media (min-width: 1100px) {
+
     nav button,
     nav .nav-btn {
         max-width: 400px;
@@ -822,5 +826,5 @@ footer {
     .feature {
         padding: 15px;
     }
-    
+
 }
