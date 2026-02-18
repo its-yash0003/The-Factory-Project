@@ -865,5 +865,8 @@ footer {
     .feature {
         padding: 15px;
     }
-
+    header{
+        padding-left: 0rem;
+        /* margin-left: 0%; */
+    }
 }
