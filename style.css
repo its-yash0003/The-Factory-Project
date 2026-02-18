@@ -730,6 +730,10 @@ footer {
         width: auto;
         padding: 10px 20px;
     }
+     /* .product img {
+        width: 100%;
+        height: auto;
+    } */
 }
 
 @media (min-width: 1100px) {
@@ -738,6 +742,10 @@ footer {
     nav .nav-btn {
         max-width: 400px;
     }
+     /* .product img {
+        width: 100%;
+        height: auto;
+    } */
 }
 
 
@@ -763,6 +771,10 @@ footer {
     .about-text {
         text-align: justify;
     }
+     /* .product img {
+        width: 100%;
+        height: auto;
+    } */
 }
 
 /* Mobile Phones */
@@ -793,6 +805,10 @@ footer {
     footer {
         font-size: 14px;
     }
+     /* .product img {
+        width: 100%;
+        height: auto;
+    } */
 
 
 
@@ -837,10 +853,10 @@ footer {
         height: auto;
     }
 
-    /* .product img {
+    .product img {
         width: 100%;
         height: auto;
-    } */
+    }
 
     .about-header h2 {
         font-size: 24px;
