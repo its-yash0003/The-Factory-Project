@@ -845,8 +845,13 @@ footer {
 @media screen and (max-width: 500px) {
 
     .header-boxes {
-        flex-direction: column;
+        flex-direction:row;
         gap: 5px;
+        /* width: 100%;
+        height: auto;
+        justify-content: center;
+        justify-self: center; */
+        font-size: 3.7vw;
     }
 
     .header-container {
@@ -866,7 +871,7 @@ footer {
         padding: 15px;
     }
     header{
-        padding-left: 1rem;
+        padding-left: 0.1rem;
         /* margin-left: 0%; */
     }
 }
