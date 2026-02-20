@@ -278,7 +278,7 @@ header {
     width: 100%;
     z-index: 1000;
     padding: 10px 50px;
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
 }
 
 .logo {
@@ -783,6 +783,15 @@ footer {
     .header-container h1 {
         font-size: 1.8rem;
     }
+    .header-box{
+        /* font-size: 3.3vw; */
+        align-items: center;
+        white-space: nowrap;
+    }
+    /* .header{
+        padding-left: 3rem;
+    
+    } */
 
     /* nav {
         flex-direction: column;
@@ -851,7 +860,12 @@ footer {
         height: auto;
         justify-content: center;
         justify-self: center; */
-        font-size: 3.7vw;
+        /* font-size: 3.7vw; */
+    }
+    .header-box{
+        font-size: 3.3vw;
+        align-items: center;
+        white-space: nowrap;
     }
 
     .header-container {
